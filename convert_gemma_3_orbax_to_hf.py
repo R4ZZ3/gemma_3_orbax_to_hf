@@ -69,7 +69,8 @@ JAX_PLATFORMS=cpu python MaxText/convert_gemma_3_orbax_to_hf.py \
     base_output_directory=/tmp/convert_gemma3 \
     load_parameters_path=gs/checkpoints/3500/ \
     hf_model_path=gemma3_4b_pt_continue_fi_3500 \
-    hf_model_name=google/gemma-3-4b-pt
+    hf_model_name=google/gemma-3-4b-pt \
+    model_size=4b
 """
 
 
