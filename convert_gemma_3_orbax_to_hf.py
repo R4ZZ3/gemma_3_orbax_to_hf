@@ -65,11 +65,10 @@ the HF Gemma3 model naming (for example, "model.embed_tokens.weight", "model.lay
 Usage
 JAX_PLATFORMS=cpu python MaxText/convert_gemma_3_orbax_to_hf.py \
     MaxText/configs/base.yml \
-    run_name=convert_gemma3_step3500 \
     base_output_directory=/tmp/convert_gemma3 \
-    load_parameters_path=gs/checkpoints/3500/ \
-    hf_model_path=gemma3_4b_pt_continue_fi_3500 \
-    hf_model_name=google/gemma-3-4b-pt \
+    load_parameters_path=gs/checkpoints/3500 \
+    hf_model_path=/path/to/save/hf_model.bin \
+    model_name=google/gemma3-4b \
     model_size=4b
 """
 
